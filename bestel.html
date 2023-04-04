@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winkelwagen</title>
+    <link rel="stylesheet" href="assets/css/bestel.css" />
+  </head>
+  <body>
+    <div class="flex-container">
+      <span class="gegevens-h">Voer je gegevens in!</span>
+      <div class="forms">
+        <div class="forms-place">
+          <div class="flex-item">
+            <form method="get" action="/bedank.html" tabindex="0">
+              <input type="hidden" id="producthidden" name="product" />
+              <label for="vname">Naam:</label><br /><br />
+              <input
+                required
+                placeholder="Voornaam*"
+                type="text"
+                id="vnaam"
+                name="vnaam"
+              />
+              <input
+                placeholder="Tussenvoegsel"
+                type="text"
+                id="tnaam"
+                name="tnaam"
+              />
+              <input
+                placeholder="Achternaam*"
+                type="text"
+                id="anaam"
+                name="anaam"
+                required
+              />
+              <br />
+              <br />
+              <!-- adress -->
+              <label for="vname">Adress:</label><br /><br />
+              <input
+                placeholder="Woonplaats*"
+                type="text"
+                id="wplaats"
+                name="wplaats"
+                required
+              />
+              <input
+                placeholder="Straat*"
+                type="text"
+                id="straat"
+                name="straat"
+                required
+              />
+              <input
+                placeholder="Huisnummer*"
+                type="text"
+                id="hnummer"
+                name="hnummer"
+                required
+              />
+              <br />
+              <br />
+              <label for="telefoon">Telefoon:</label><br /><br />
+              <input
+                type="tel"
+                placeholder="nummer"
+                id="tnummer"
+                name="telefoon"
+                required
+              />
+              <br /><br />
+              <label for="email">E-mail:</label><br /><br />
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail*"
+              />
+              <br />
+              <br />
+              <label for="rekening">Rekening nummer:</label><br />
+              <br />
+              <input
+                required
+                type="text"
+                id="rekening"
+                name="rekening"
+                placeholder="Rekening nummer*"
+              />
+              <br /><br />
+              <label for="submit"></label>
+              <input type="submit" id="submit" name="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/javascript/detail.js"></script>
+  </body>
+</html>

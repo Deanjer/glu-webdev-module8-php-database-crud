@@ -1,0 +1,29 @@
+h1{
+    /* text-align: center; */
+    font-size: 60px;
+}
+.gegevens{
+    width: 25%;
+    height: auto;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.container{
+    margin-top: 40px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.bestelling{
+    width: 25%;
+    margin: 0 auto;
+}
+.bestelling p {
+    font-size: 30px;
+}

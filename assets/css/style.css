@@ -1,0 +1,54 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: url("../videos/achtergrondvid.mp4");
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+#titel1{
+    color: white;
+    font-size: 120px;
+    font-family: arial;
+    font-weight: bold;
+}
+#onderschrift{
+    color: white;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+}
+#content{
+    /* background-color: rgb(140, 220, 20); */
+    position: absolute;
+    /* margin-top: 25%;
+    margin: 0 auto; */
+    width: 100%;
+    height: 200px;
+    top:calc(50% - 100px);
+    text-align: center;
+}
+#btnstart{
+width: 110px;
+height: 40px;
+margin-top:15px ;
+background-color: aquamarine;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+}
+#btnstart:hover{
+    transform: scale(1.1,1.1);
+}
+#punt{
+    color: aquamarine;
+    font-size: 95px;
+}
+

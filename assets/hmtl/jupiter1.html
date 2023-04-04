@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailpagina</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascript/jupiter1.js"></script>
+    <link rel="stylesheet" href="../css/detail.css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="/webshop.html"
+        ><span id="h-txt">Webshop</span><span id="h-punt">.</span></a
+      >
+      <div id="verstreep1"></div>
+      <a href=""><p id="acount-balk">Acount</p></a>
+      <a href=""
+        ><p id="winkelwagen">Winkel<br />wagen</p>
+        <p></p
+      ></a>
+      <img
+        id="headerimg"
+        src="../images/milky-way-full-stars-space.jpg"
+        alt=""
+      />
+    </div>
+    <div class="image-select">
+      <div class="image-groot">
+        <img
+          id="change-image"
+          src="../images/planet-jupiter-vector-11088916.jpeg"
+          alt="Black Image"
+        /><br />
+      </div>
+
+      <div class="images4">
+        <button class="jupiter-button">
+          <img
+            class="jupiter-buttonimg"
+            src="../images/planet-jupiter-vector-11088916.jpeg"
+            alt="jupiter"
+          />
+        </button>
+        <button class="earth-button">
+          <img
+            class="earth-buttonimg"
+            src="../images/planet-earth-vector-11088906.jpeg"
+            alt="jupiter"
+          />
+        </button>
+        <button class="saturn-button">
+          <img
+            class="saturn-buttonimg"
+            src="../images/planet-saturn-vector-11088920.jpeg"
+            alt="jupiter"
+          />
+        </button>
+        <button class="venus-button">
+          <img
+            class="venus-buttonimg"
+            src="../images/planet-venus-vector-10652806.jpeg"
+            alt="jupiter"
+          />
+        </button>
+      </div>
+    </div>
+    <div class="details">
+      <span class="title">Planeten</span><br />
+      <span class="d-text"
+        >Planeten in verschillende vormen en maten. al vanaf &euro; 28,99</span
+      >
+      <br /><br />
+      <b
+        ><span class="d-text">kies je uitvoering:</span><br /><br />
+        <form method="get" action="/bestel.html">
+          <label>
+            <input type="radio" name="product" value="Jupiter" checked />
+            <img
+              class="radio-planets"
+              src="../images/planet-jupiter-vector-11088916.jpeg"
+              alt="Option 1"
+              id="planets"
+            />
+          </label>
+
+          <label>
+            <input type="radio" name="product" value="Earth" />
+            <img
+              class="radio-planets"
+              src="../images/planet-earth-vector-11088906.jpeg"
+              alt="Option 2"
+              id="planets"
+            />
+          </label>
+          <label>
+            <input type="radio" name="product" value="Saturn" checked />
+            <img
+              class="radio-planets"
+              src="../images/planet-saturn-vector-11088920.jpeg"
+              alt="Option 1"
+              id="planets"
+            />
+          </label>
+
+          <label>
+            <input type="radio" name="product" value="Venus" />
+            <img
+              class="radio-planets"
+              src="../images/planet-venus-vector-10652806.jpeg"
+              alt="Option 2"
+              id="planets"
+            /> </label
+          ><br />
+          <br /><br /><br />
+          <input href="/bestel.html" type="submit" id="submit" name="submit" />
+          <!-- <a href="/bestel.html"><div class="bestel-knop"> -->
+        </form>
+       
+      </b>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,427 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+}
+/* body{
+    margin: 0 auto;
+    width: 1700px;
+} */
+#header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+}
+#headerimg{
+   margin-top: -110px;
+   width: 100%;
+}
+#h-txt{
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+#h-punt{
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 7px;
+}
+#menuleft{
+    height: 1000px;
+    width: 300px;
+    border: 2px solid black;
+    padding-top: 65px;
+}
+#blok1{
+    width: 280px;
+    height: 120px;
+    border: 2px solid black;
+    margin-left: 7px;
+    text-align: center;
+}
+#subspace{
+ font-size: 20px;
+ font-weight: bold;
+}
+#cato{
+    line-height: 30px;
+}
+#catopijl{
+    color: rgb(6, 155, 241);
+    margin-right: 5px;
+}
+#blok2{
+    width: 280px;
+    height: 180px;
+    border: 2px solid black;
+    margin-left: 7px;
+    margin-top: 3px;
+    text-align: center;
+}
+#selectiefijn{
+    font-size: 20px;
+    font-weight: bold;
+}
+#matriaal{
+    margin-right: 90px;
+    font-weight: bold;
+}
+#matrialen{
+    margin-right: 80px;
+}
+#matpijl{
+    margin-right: 5px;
+}
+#matalign{
+    width: 240px;
+    height: 120px;
+    text-align: left;
+    margin-left: 80px;
+    line-height: 25px;
+}
+#blok3{
+    width: 280px;
+    height: 110px;
+    border: 2px solid black;
+    margin-left: 7px;
+    margin-top: 3px;
+    text-align: center;
+}
+#prijs-txt{
+    font-weight: bold;
+    font-size: 20px;
+}
+#matpijl{
+    color: rgb(6, 155, 241);
+}
+#prijs-balk{
+    margin-top: 50px;
+}
+#nul-euro{
+    margin-right: 40px;
+    /* margin-left: -10px; */
+}
+#duizend-euro{
+    margin-left: 68px;
+}
+#prijs0-1000{
+    margin-top: 20px;
+}
+#submit-prijs{
+    width: 55px;
+    height: 30px;
+    background-color: aquamarine;
+    border-radius: 8px;
+    border: none;
+    cursor:pointer;
+}
+#submit-prijs:hover{
+    transform: scale(1.1,1.1);
+}
+#vol{
+    background-color: orange;
+}
+
+.slider-container .slider{
+    appearance: none;
+    border-radius: 5px;
+    background-color: rgb(224, 218, 218);
+    height: 8px;
+    width: 60%;
+}
+.slider-container .slider::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(22, 166, 185);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.slider-container .slider::-webkit-slider-thumb:hover{
+    box-shadow: 0 0 0 10px rgba(127, 255, 212, 0.608);
+}
+.slider-container .slider:active::-webkit-slider-thumb{
+    box-shadow: 0 0 0 15px rgba(127, 255, 212, 0.608);
+}
+.slider-container{
+    margin-top: 15px;
+}
+#blok4{
+    width: 280px;
+    height: 140px;
+    border: 2px solid black;
+    margin-left: 7px;
+    text-align: center;
+    margin-top: 3px;
+}
+#recentbekeken{
+    font-size: 20px;
+    font-weight: bold;
+}
+#jupiterrecent{
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+#eurojuprec{
+  float: left;
+  margin-left: 15px;
+  margin-top: 45px;
+  font-size: 20px;
+}
+#blok5{
+    width: 280px;
+    height: 100px;
+    border: 2px solid black;
+    margin-left: 7px;
+    text-align: center;
+    margin-top: 3px;
+}
+#nieuwsbrief{
+    font-size: 20px;
+    font-weight: bold;
+}
+#nieuwsemail{
+    margin-top: 15px;
+    width: 150px;
+}
+#nieuwsbtn{
+    width: 150px;
+    margin-top: 5px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+}
+#nieuwsbtn:hover{
+    transform: scale(1.2,1.2);
+}
+#nieuwsbtn:active{
+    background-color: rgb(52, 238, 176);
+}
+#blok6{
+    width: 280px;
+    height: 300px;
+    border: 2px solid black;
+    margin-left: 7px;
+    margin-top: 3px;
+}
+#product{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+select{
+    width: 150px;
+    height: 35px;
+    border: 1px solid gray;
+    background-color: rgb(69, 69, 69);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#selectdiv{
+    text-align: center;
+    margin-top: 22px;
+}
+#vergelijkbtn{
+    width: 150px;
+    margin-top: 10px;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    cursor: pointer;
+    margin-left: 65px;
+    margin-bottom: 25px;
+}
+#vergelijkbtn:hover{
+    transform: scale(1.2,1.2);
+}
+#vergelijkbtn:active{
+    background-color: rgb(52, 238, 176);
+}
+#alleswis{
+    margin-left:95px ;
+    color: rgb(6, 155, 241);
+    cursor:pointer;
+}
+#alleswis:hover{
+    text-decoration: underline;
+}
+#winkelwagen{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    font-weight: bold;
+    margin-top: 12px;
+    right: 0px;
+    margin-right: 30px;
+}
+#winkelwagen:hover{
+    text-decoration: underline;
+}
+#verstreep1{
+height: 40px;
+width: 2px;
+background-color: white;
+position: absolute;
+right: 0px;
+margin-right: 85px;
+margin-top: 8px;
+}
+#acount-balk{
+    color: white;
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    right: 0px;
+    margin-top: 20px;
+    margin-right: 95px;
+}
+#acount-balk:hover{
+    text-decoration: underline;
+}
+#content{
+    width: calc(100% - 304px);
+    /* border: 2px solid black; */
+    height: 1000px;
+    float: right;
+    margin-top: 67px;
+}
+#planeten-h{
+    padding-top: 9px;
+    margin-left: 29px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#top-right{
+    width: calc(100% - 306px);
+    height: 30px;
+   
+    
+}
+#select-righttop{
+    background-color: rgb(197, 195, 195);
+    border: none;
+    height: 25px;
+    width: 150px;
+    border-radius: 6px;
+    margin-left: 390px;
+}
+#hrright{
+    width: 95%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.row1{
+    margin-top: 10px;
+    margin-left: 53px;
+    display: flex;
+}
+.kaart1{
+     width: calc(90% / 3);
+     height: 490px;
+     border: 1px solid black ;
+}
+.imgk1{
+    width: calc(90% - 20px);
+    max-height: 350px;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* margin-right: 10px; */
+}
+.kaart2{
+    width: calc(90% / 3);
+    height: 490px;
+    border: 1px solid black ;
+    margin-left: 30px;
+}
+.kaart3{
+    width: calc(90% / 3);
+    height: 490px;
+    border: 1px solid black ;
+    margin-left: 30px;
+}
+
+#options-righttop {
+    width: 300px;
+    float: right;
+}
+.k1txt{
+    margin-left: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(11, 33, 46) ;
+    cursor: pointer;
+}
+.k1txt:hover{
+  text-decoration: underline;
+}
+.k1prijs{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.k1winkel{
+    margin-left: 145px;
+    font-size: 17px;
+}
+.k1winkel:hover{
+    color: rgb(6, 155, 241);
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 1500px) {
+    .k1winkel{
+        margin-left: 50px;
+    }
+  }
+.k1shopimg{
+    width: 25px;
+    height: 25px;
+}
+.kline{
+    width: 90%;
+    height: 1px;
+    background-color: black;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+.row2{
+    margin-top: 10px;
+    margin-left: 53px;
+    display: flex;
+}
+.row3{
+    margin-top: 10px;
+    margin-left: 53px;
+    display: flex;
+}
+.row4{
+    margin-top: 10px;
+    margin-left: 53px;
+    display: flex;
+}
+.footer{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    
+}

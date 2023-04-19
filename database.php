@@ -36,7 +36,9 @@
     }
     ?>
     <div class="main-wrapper">
+    <h1>Database</h1>
     <div class="crud-wrapper">
+       
         <form action="" method="POST">
             <div class="database-inssert margin-database">
                 <label>Product</label>

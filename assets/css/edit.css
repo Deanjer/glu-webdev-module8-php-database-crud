@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    margin-top: 6rem;
+    width: 30%;
+    height: 70vh;
+    background-color: rgb(47, 151, 247);
+    text-align: center;
+    border-radius: 10px;
+}
+form{
+    margin-top: 2rem;
+}
+h1{
+    font-size: 42px;
+}
+input{
+    width: 45%;
+    height: 20px;
+    color: black;
+}
+label{
+    font-weight: bold;
+    font-size: 25px;
+}
+.update-button{
+    width: 45%;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}

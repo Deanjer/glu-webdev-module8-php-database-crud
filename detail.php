@@ -16,7 +16,7 @@
     }
 
     .detail-main {
-        background-color: rgb(239, 236, 236);
+        /* background-color: rgb(239, 236, 236); */
         width: 100%;
         height: auto;
     }
@@ -69,13 +69,13 @@
         color: white;
     }
     </style>
-    <div class="main-menu">
+    <!-- <div class="main-menu">
         <div class="main-menu-wrapper">
         <div>
             <a href="webshop.php"><button>Home</button></a>
         </div>
         </div>
-        <div></div>
+        <div></div> -->
     </div>
     <div class="detail-main">
         <div class="detail-wrapper">

@@ -5,7 +5,7 @@ session_start();
 // Include the database connection
 require_once "connect.php";
 
-print_r($_POST);
+
 // Check if the form has been submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['opslaan'])  ) {
 
@@ -15,8 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['opslaan'])  ) {
     $price = $_POST["price"];
     $img = $_POST["img"];
 
-    echo $id;
-    echo $product;
     // Prepare the SQL statement
     $stmt = $conn->prepare("UPDATE productdata SET product=:product, price=:price, img=:img WHERE id=:id");
     
@@ -57,23 +55,28 @@ if (isset($_POST["id"])) {
 
 <head>
     <title>Edit Product</title>
+    <link rel="stylesheet" href="assets/css/edit.css">
 </head>
 
 <body>
+    <div class="flex-wrapper">
+    <div class="wrapper">
     <h1>Edit Product</h1>
     <form action="edit_product.php" method="post">
         <input type="hidden" name="id" value="<?php echo $id; ?>">
-        <label for="product">Product:</label>
+        <label for="product">Product:</label><br>
         <input type="text" name="product" value="<?php echo $product; ?>">
         <br><br>
-        <label for="price">Price:</label>
+        <label for="price">Price:</label><br>
         <input type="text" name="price" value="<?php echo $price; ?>">
         <br><br>
-        <label for="img">Image:</label>
+        <label for="img">Image:</label><br>
         <input type="text" name="img" value="<?php echo $img; ?>">
         <br><br>
-        <button type="submit" name="opslaan">Update Product</button>
+        <button class="update-button" type="submit" name="opslaan">Update Product</button>
     </form>
+    </div>
+    </div>
 </body>
 
 </html>

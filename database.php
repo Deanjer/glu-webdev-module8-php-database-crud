@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +12,7 @@
 
 <body>
     <?php include 'connect.php';
+    
     
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['save'])) {
         
@@ -59,18 +61,18 @@
         </div>
 
         <div class="table-wrapper">
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Product</th>
-                <th scope="col">Price</th>
-                <th scope="col">Img</th>
-                <th scope="col">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Img</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
                 // Include the database connection
                 require_once "connect.php";
                 
@@ -80,47 +82,48 @@
 
                     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {     
             ?>
-            <tr>
-                <td><?php echo $row['id']; ?></td>
-                <td><?php echo $row['product']; ?></td>
-                <td><?php echo '€'.$row['price']; ?></td>
-                <td><?php echo '<img class="img-db" src="'.$row['img'].'">'; ?></td>
-                <td>
-                    <div class="actions-wrapper">
-                    <form action="edit_product.php" method="post">
-                            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                            <button class="crud-button" type="submit" name="edit">Edit</button>
-                        </form>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4"></td>
-                <td>
-                    <div class="actions-wrapper">
-                        <form action="delete_product.php" method="post"
-                            onsubmit="return confirm('Are you sure you want to delete this product?');">
-                            <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-                            <button class="crud-button" type="submit" name="delete">Delete</button>
-                        </form>
-                    </div>
-                </td>
-            </tr>
-            <?php 
+                    <tr>
+                        <td><?php echo $row['id']; ?></td>
+                        <td><?php echo $row['product']; ?></td>
+                        <td><?php echo '€'.$row['price']; ?></td>
+                        <td><?php echo '<img class="img-db" src="'.$row['img'].'">'; ?></td>
+                        <td>
+                            <div class="actions-wrapper">
+                                <form action="edit_product.php" method="post">
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <button class="crud-button" type="submit" name="edit">Edit</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                        <td>
+                            <div class="actions-wrapper">
+                                <form action="delete_product.php" method="post"
+                                    onsubmit="return confirm('Are you sure you want to delete this product?');">
+                                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+                                    <button class="crud-button" type="submit" name="delete">Delete</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <?php 
                     } 
                 } catch(PDOException $e) {
                     echo "Error: " . $e->getMessage(); 
                 } 
             ?>
-        </tbody>
-    </table>
-</div>
+                </tbody>
+            </table>
+        </div>
 
-
-</div>
 
     </div>
-    
+
+    </div>
+
+
 </body>
 
 </html>
